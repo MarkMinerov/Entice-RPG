@@ -1,0 +1,1042 @@
+header, footer, body, nav{
+    padding: 0;
+    margin: 0;
+}
+a, ul, li{
+    list-style: none;
+    text-decoration: none;
+}
+/* FONTS */
+@font-face {
+    font-family: "ProxNovaReg";
+    src: url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ProxNovaBold";
+    src: url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ProxNovaLight";
+    src: url("../fonts/ProximaNova-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ProxNovaSemibold";
+    src: url("../fonts/ProximaNovaExCn-Semibold.ttf") format("truetype");
+}
+/* FONTS END */
+/* HEADER */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    width: 66.66%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar ul{
+    padding: 0;
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+.socButton img{
+    max-width: 30px;
+    max-height: 20px;
+    width: 100%;
+    height: auto;
+}
+.socButton a{
+margin: 0 10px;
+}
+.socButton{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.payBlock{
+    position: relative;
+}
+.payBlock .qwe{
+    left: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: ProxNovaReg;
+    font-weight: 900;
+    font-size: 12.6px;
+}
+.payButton{
+    cursor: pointer;
+    /* transition: 1s linear;
+    transition-property: all;
+    transition-duration: 1s; */
+    top: -9px;
+    position: absolute;
+
+        width: 170px;
+        height: 40px;
+        background: #0072ff;
+        background: -moz-linear-gradient(left,  #00c6ff 0%, #0072ff 100%);
+        background: -webkit-linear-gradient(left,  #00c6ff 0%,#0072ff 100%);
+        background: linear-gradient(to right,  #00c6ff 0%,#0072ff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c6ff', endColorstr='#0072ff',GradientType=1 );
+        opacity: 0.3;
+        -webkit-transform: skew(-15deg);
+        -moz-transform: skew(-15deg);
+        -o-transform: skew(-15deg);
+        transform: skew(-15deg);
+}
+.navBar>a:hover .payButton{
+        background: #fff;
+        /* background: -moz-linear-gradient(left,  #0072ff 0%, #00c6ff 100%);
+        background: -webkit-linear-gradient(left,  #0072ff 0%,#00c6ff 100%);
+        background: linear-gradient(to right,  #0072ff 0%,#00c6ff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0072ff', endColorstr='#00c6ff',GradientType=1 );
+         */-webkit-transform: skew(-15deg);
+        -moz-transform: skew(-15deg);
+        -o-transform: skew(-15deg);
+        transform: skew(-15deg);
+        opacity: 0.4;
+}
+/* HEADER END */
+/* MAIN CONTENT */
+body{
+    width: 100%;
+    font-family: "ProxNovaReg";
+    color: #ffffff;
+}
+.gradient{
+    background: #0056b8;
+background: -moz-linear-gradient(left, #0056b8 48%, #a400e0 100%);
+background: -webkit-linear-gradient(left, #0056b8 48%,#a400e0 100%);
+background: linear-gradient(to right, #0056b8 48%,#a400e0 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0056b8', endColorstr='#a400e0',GradientType=1 );
+    position: absolute;
+    width: 100%;
+    height: 3370px;
+    z-index: 2;
+
+}
+/* Section ONE  */
+.sectionOneTop{
+    padding-top: 70px;
+    margin-bottom: 50px;
+}
+.sectionOneTop nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo span{
+    font-size: 11px;
+    font-family: ProxNovaLight;
+}
+.logo h1{
+    margin: 0;
+    font-size: 32.72px;
+    font-family: ProxNovaReg;
+}
+.navBar a{
+    /* padding-bottom: 5px; */
+    font-family: ProxNovaReg;
+    font-size: 14px;
+    color: #ffffff;
+}
+a.lineBottom{
+    color: #ffffff;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+a.lineBottom:hover{
+    background-size: 100% 2px;
+}
+.vkHover:hover img,
+.disHover:hover img{
+    margin-bottom: 5px;
+}
+.fixPayHeightIcon{
+    height: 14px;
+}
+.sectionOneBg{
+    background-image: url(../img/oneBg.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 2; 
+    height: 1000px;
+    width: 100%;
+}
+.sectionOne{
+    height: 1000px;
+    margin: 0 auto;
+    z-index: 3;
+    position: relative;
+}
+.sectionOneBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sectionOneLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sectionOneText{
+    display: flex;
+    flex-direction: column;
+}
+.sectionOneText h1{
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-size: 35.5px;
+    font-family: ProxNovaReg;
+    font-weight: 900;
+}
+.sectionOneText span{
+    margin-bottom: 70px;
+}
+.goPlayButton .abc{
+    position: relative;
+    top: 12px;
+    left: 40px;
+    color: #ffffff;
+    font-size: 21.8px;
+    font-family: ProxNovaReg;
+    font-weight: 900;
+}
+.goPlayButton{
+    position: relative;
+    width: 280px;
+}
+.playButton{
+    cursor: pointer;
+    /* transition: 1s linear; */
+    position: absolute;
+    width: 275px;
+    height: 66px;
+    opacity: 0.6;
+    background: #f09819;
+    background: -moz-linear-gradient(left,  #f09819 0%, #edde5d 100%);
+    background: -webkit-linear-gradient(left,  #f09819 0%,#edde5d 100%);
+    background: linear-gradient(to right,  #f09819 0%,#edde5d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09819', endColorstr='#edde5d',GradientType=1 );
+    -webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    transform: skew(-15deg);
+}
+.sectionOneText a:hover .playButton{
+    /* background: #edde5d; */
+    opacity: 0.4;
+    background: #fff;
+    /* background: -moz-linear-gradient(left,  #edde5d 0%,#f09819 100%);
+    background: -webkit-linear-gradient(left,  #edde5d 0%,#f09819 100%);
+    background: linear-gradient(to right,  #edde5d 0%,#f09819 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edde5d', endColorstr='#f09819',GradientType=1 );
+     */-webkit-transform: skew(-15deg);
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(-15deg);
+    transform: skew(-15deg);
+}
+.fixPlayHeightIcon{
+    position: relative;
+    top: 8px;
+    left: 35px;
+    height: 28px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.arrowDown{
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 21.4px;
+    font-family: ProxNovaReg;
+}
+.fixNextHeightIcon{
+    height: 20px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.sectionOneRight{
+    position: relative;
+}
+.girlTop{
+    position: relative;
+    z-index: 3;
+    top: 4%;
+    left: 16%;
+}
+.girlBack{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+
+}
+/* Section ONE END */
+/* Section TWO */
+.sectionTwoBg{
+    background-image: url(../img/twoBg.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 2; 
+    height: 1000px;
+    width: 100%;
+    bottom: -15%;
+}
+.sectionTwo{
+    height: 600px;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+}
+.fixCopyHeightIcon{
+    height: 17px;
+    width: 14px;
+}
+
+.sectionTwoTitle p{
+    font-size: 74px;
+    font-family: ProxNovaReg;
+    font-weight: 900;
+    
+    line-height: 1.1;
+    opacity: 0.15;
+}
+.sectionTwoTitle h1{
+    position: relative;
+    bottom: 120px;
+    margin-left: 21px;
+}
+.sectionTwoTitle{
+    position: relative;
+}
+.serverBlockBg{
+    width: 93%;
+    height: 245px;
+    background: #0b0b0b;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    position: absolute;
+    opacity: 0.8;
+}
+#onlinePlayerProgressOne,
+#onlinePlayerProgressTwo,
+#onlinePlayerProgressThree{
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    border:0;
+    width: 200px;
+    height: 4px;
+    background: #0c1626;
+    margin-bottom: 20px;
+}
+#onlinePlayerProgressOne::-webkit-progress-bar,
+#onlinePlayerProgressTwo::-webkit-progress-bar,
+#onlinePlayerProgressThree::-webkit-progress-bar {
+    width: 200px;
+    height: 4px;
+    background: #0c1626;
+}
+#onlinePlayerProgressOne::-webkit-progress-value,
+#onlinePlayerProgressTwo::-webkit-progress-value,
+#onlinePlayerProgressThree::-webkit-progress-value {
+    background: #1096ef;
+}
+#onlinePlayerProgressOne::-moz-progress-bar,
+#onlinePlayerProgressTwo::-moz-progress-bar,
+#onlinePlayerProgressThree::-moz-progress-bar {
+    background: #1096ef;
+}
+.allPlayer{
+    color: #717275;
+}
+.serverName{
+    font-family: ProxNovaReg;
+    font-weight: 900;
+    font-size: 27px;
+    margin-bottom: 24px;
+}
+.ipServerOne{
+    font-family: ProxNovaReg;
+    font-size: 15.4px;
+    top: 9px;
+    position: relative;
+    z-index: 4;
+}
+.sectionTwoServers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.serverBlock{
+    width: 100%;
+    position: relative;
+}
+.serverBlockDescr{
+    position: relative;
+    top: 60px;
+    right: 23px;
+    text-align: center;
+}
+.serverIp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0.17;
+}
+.serverIpBg{
+    width: 70%;
+    height: 39px;
+    background: #000;
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    position: absolute;
+    z-index: -1;
+
+}
+#copyServerOne{
+    position: absolute;
+    z-index: 4;
+    top: 0;
+}
+.serverStats{
+    margin-bottom: 10px;
+}
+.serverOffline{
+    opacity: 0.4;
+}
+.pointServer{
+    position: absolute;
+    border: 20px solid rgb(34, 128, 222,0.26);
+    border-radius: 100px;
+    height: 48.4%;
+    top: -50px;
+    left: 136px;
+}
+.pointServer img{
+    width: 24px;
+    height: 24px;
+    border: 20px solid #2280de;
+    border-radius: 100px;
+    background: #2280de;
+}
+/* Section TWO END */
+/* Section THREE */
+.sectionThreeBg{
+    background-image: url(../img/threeBg.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 2; 
+    height: 1000px;
+    width: 100%;
+    bottom: -12%;
+}
+.sectionThree{
+    height: 600px;
+    z-index: 3;
+    position: relative;
+}
+.sectionThreeTitle p{
+    font-size: 74px;
+    font-family: ProxNovaReg;
+    font-weight: 900;
+    
+    line-height: 1.1;
+    opacity: 0.15;
+}
+.sectionThreeTitle h1{
+    position: relative;
+    bottom: 120px;
+    left: 21px;
+}
+.sectionThreeTitle{
+    position: relative;
+}
+.goToPlayStage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.playStage{
+    position: relative;
+}
+.playStageInfo{
+    position: relative;
+    z-index: 3;
+    top: 75px;
+    left: 40px;
+}
+.playStageTitle{
+    font-size: 16px;
+    font-family: ProxNovaReg;
+    font-weight: 900;
+}
+.playStageDescr{
+    font-size: 14px;
+    font-family: ProxNovaLight;
+}
+.playStagePoint{
+    border: 13px solid rgb(34, 128, 222,0.26);
+    border-radius: 100px;
+    width: 75px;
+    position: absolute;
+    top: 125px;
+    left: 78px;
+}
+.playStagePointIn{
+    border: 20px solid #2280de;
+    border-radius: 100px;
+    background: #2280de;
+    width: 35px;
+}
+.playStagePoint img{
+    height: 30px;
+    width: 35px;
+}
+.playStageBg{
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+#copyIpOneServer{
+    background: none;
+    border: none;
+    width: 14px;
+    height: 17px;
+    margin-left: 15px;
+    top: 9px;
+    position: relative;
+    z-index: 10;
+}
+/* Section THREE END */
+.sectionFourBg{
+    background-image: url(../img/fourBg.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 2; 
+    height: 1000px;
+    width: 100%;
+    bottom: -58%;
+} 
+.sectionFour{
+    height: 600px;
+    z-index: 3;
+    position: relative;
+} 
+.sectionFour .container{
+    top: 30%;
+}
+
+.newsSection{
+    position: relative;
+    max-width: 320px;
+    min-width: 320px;
+}
+
+.newsSectionBg{
+    width: 351px;
+    height: 440px;
+    background: #040f25;
+    -webkit-transform: skew(-6deg);
+    -moz-transform: skew(-6deg);
+    -o-transform: skew(-6deg);
+    transform: skew(-6deg);
+    position: absolute;
+    overflow: hidden;
+}
+.newsSectionAll{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 330px;
+    padding-top: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 170px;
+}
+
+.newsHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.newsInfo{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.newsSeeAll{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 55pt;
+    letter-spacing: 0;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+}
+.newsSeeAll a{
+    color: #5e6473;
+}
+
+/* MAIN CONTENT END */
+footer{
+    height: 162px;
+    background: #0e1630;
+    color: #4f5568;
+    position: relative;
+    bottom: -10.3%;
+}
+footer .navBar a {
+    color: #4f5568;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 162px;
+    align-items: center;
+}
+
+/* PAY PAGE */
+.payPage{
+    height: auto;
+}
+.payPageMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftPayPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.leftPayDescr{
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+}
+.leftPayText{
+    margin-bottom: 20px;
+}
+.rightPayPage{
+    background: #030711;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+.payBg{
+    background-image: url(../img/payBg.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 2; 
+    height: 1000px;
+    width: 100%;
+}
+.payServer,
+.payNick,
+.paySumm,
+.goPay{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 350px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 3;
+}
+.paySumm input { 
+    padding-bottom: 10px;
+    padding-top: 7px!important;
+    -moz-appearance: textfield;
+}
+.paySumm input::-webkit-inner-spin-button { 
+    display: none;
+}
+.payServer select{
+    resize:none;
+    font-family: ProxNovaLight;
+    font-size: 14px;
+    height: 48px!important;
+    border: none;
+    background: #342858;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 25px;
+    position: relative;
+    z-index: 5;
+    opacity: 0.9;
+}
+.payNick textarea,
+.paySumm textarea,
+.paySumm input
+{
+    resize:none;
+    padding-left: 25px;
+    font-family: ProxNovaLight;
+    font-size: 14px;
+    height: 32px;
+    border: none;
+    background: #342858;
+    color: #fff;
+    overflow: hidden;
+    padding-top: 14px;
+    white-space: nowrap;
+}
+.payNick textarea::placeholder,
+.paySumm textarea::placeholder,
+.paySumm input::placeholder{
+    color: #fff;
+}
+.goPay button{
+    height: 60px;
+    border: none;
+    font-family: ProxNovaReg;
+    font-size: 18.6px;
+    font-weight: 900;
+    color: #FFF;
+    background: #0072ff;
+    background: -moz-linear-gradient(left,  #00c6ff 0%, #0072ff 100%);
+    background: -webkit-linear-gradient(left,  #00c6ff 0%,#0072ff 100%);
+    background: linear-gradient(to right,  #00c6ff 0%,#0072ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c6ff', endColorstr='#0072ff',GradientType=1 );
+}
+.payForm{
+    padding: 30px;
+}
+.payTitleForm{
+    margin-bottom: 20px;
+}
+.fixSelectIcon{
+    position: absolute;
+    right: 25px;
+    height: 20px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    top: 53px;
+    z-index: 4;
+}
+@media (min-width: 986px) and (max-width:1320px){
+    .container {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .payServer, .payNick, .paySumm, .goPay {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 248px;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 3;
+    }
+    .navBar a {
+        display: flex;
+    }
+    .pointServer {
+        position: absolute;
+        border: 20px solid rgb(34, 128, 222,0.26);
+        border-radius: 100px;
+        height: 48.4%;
+        top: -50px;
+        left: 89px;
+    }
+    .playStageDescr {
+        font-size: 14px;
+        font-family: ProxNovaLight;
+        width: 67%;
+    }
+    .playStagePoint {
+        border: 13px solid rgb(34, 128, 222,0.26);
+        border-radius: 100px;
+        width: 75px;
+        position: absolute;
+        top: 163px;
+        left: 27px;
+    }
+    .playStageBg img{
+        width: 250px;
+    }
+    .playStageInfo {
+        position: relative;
+        z-index: 3;
+        top: 43px;
+        left: 38px;
+    }
+    .playStageTitle {
+        font-size: 16px;
+        font-family: ProxNovaReg;
+        font-weight: 900;
+        width: 65%;
+    }
+    .news {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: -66%;
+        left: 5%;
+    }
+    .newsSectionBg img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 568px) and (max-width:985px){
+    .navBar a {
+        display: flex;
+    }
+    .container {
+        width: 75%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+    }
+    .payServer, .payNick, .paySumm, .goPay {
+        width: 257px;
+    }
+}
+
+.container.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-section-main {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-device-width: 415px) {
+    .sectionOneRight, .arrowDown, .sectionThreeTitle p, .playButton, .abc, .sectionOneText, .socButton, .sectionTwoTitle p, footer {
+        display: none;
+    }
+
+    .sectionTwoServers, .goToPlayStage, .news-section-main {
+        flex-direction: column;
+    }
+
+    .serverBlock {
+        min-height: 245px;  
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .serverBlock:last-child {
+        margin-bottom: 0;  
+    }
+
+    .sectionTwoTitle h1 {
+        margin: 0 20px;
+    }
+
+    .pointServer {
+        height: 63px;
+    }
+
+    .gradient {
+        width: 100vw;
+        height: auto;
+    }
+
+    .sectionOneTop nav {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .navBar {
+        display: inline-flex;
+        align-items: flex-start;
+        width: auto;
+    }
+
+    .navBar, .navBar ul {
+        flex-direction: column;
+    }
+
+    .navBar ul {
+        margin: 0;
+    }
+
+    .navBar ul li {
+        margin: 10px 0;
+    }
+
+    .navBar ul li a {
+        font-size: 20px; 
+    }
+
+    .payBlock {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .payBlock .payButton {
+        width: 200px;
+        height: 50px;
+        top: 0;
+    }
+
+    .payBlock .qwe {
+        left: 0;
+        margin-top: 15px;
+    }
+
+    .qwe span {
+        font-size: 15px;
+    }
+
+    .fixPayHeightIcon {
+        height: 20px;
+    }
+
+    .sectionOne {
+        height: 550px;
+        position: relative;
+        z-index: 999;
+    }
+
+    .pointServer {
+        left: auto;
+    }
+
+    .serverIpBg {
+        width: 110%;
+    }
+
+    .serverBlockDescr {
+        right: 0;
+    }
+
+    .serverBlockBg {
+        width: 80%;
+    }
+
+    .sectionTwoTitle {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .sectionTwoTitle h1, .sectionThreeTitle h1 {
+        left: 0;
+        margin-left: 15px;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .sectionThree {
+        margin-top: 410px;
+    }
+
+    .sectionThree .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .playStage {
+        height: 500px;
+    }
+
+    .playStageInfo {
+        left: auto;
+        margin-left: 40px;
+    }
+
+    .sectionFour {
+        height: auto;
+        margin-top: 950px;
+    }
+
+    .sectionFourBg {
+        bottom: 0;
+    }
+
+    .news-section-main {
+        padding-bottom: 30px;
+    }
+
+    .newsSectionAll {
+        transform: scale(0.8);
+        margin-right: 0;
+    }
+
+    .leftPayPage {
+        display: none;
+    }
+
+    .payBlock.pay a {
+        margin-top: 15px;
+    }
+    
+    .payForm {
+        padding: 20px 0;
+        width: 100vw;
+    }
+
+    .sectionOne {
+        height: auto;
+    }
+
+    .payBg {
+        height: 100%;
+    }
+
+    .payTitleForm {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .payNick textarea {
+        font-size: 20px;
+    }
+
+    .paySumm input {
+        font-size: 20px;
+    }
+
+    .payServer select, .payServer select option {
+        font-size: 20px;
+    }
+
+    .fixSelectIcon {
+        top: 45px;
+    }
+}

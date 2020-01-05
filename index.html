@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entice RPG</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="app" class="mainContent">
+    <div class="gradient">
+        <div class="sectionOne">
+            <div class="sectionOneBg"></div>
+            <div class="container">
+                <header class="sectionOneTop">
+                    <nav>
+                        <div class="logo">
+                            <h1>Entice <b>RPG</b></h1>
+                            <span>Попробуй и ты соблазн на вкус</span>
+                        </div>
+                        <div class="navBar">
+                            <ul>
+                                <li><a class="lineBottom" href="http://gta-entice.ru/index.html">Главная</a></li>
+                                <li><a class="lineBottom" href="http://forum.gta-entice.ru">Форум</a></li>
+                                <li><a class="lineBottom" href="http://gta-entice.ru/#playTab">Как начать играть</a></li>
+                                <li><a class="lineBottom" href="http://gta-entice.ru/#newsTab">Новости</a></li>
+                            </ul>
+                            <div class="socButton">
+                                <a href="https://vk.com/entice_rpg" title="VK" class="vkHover"><img src="./img/svg/vk.svg" alt=""></i></a>
+                                <a href="https://discordapp.com/invite/MYSNgHc" title="Discord"class="disHover"><img src="./img/svg/discord.svg" alt=""></i></a>
+                            </div>
+                            <a href="http://gta-entice.ru/pay.html" class="payBlock">
+                                <div class="payButton"></div>
+                                <div class="qwe"><img src="./img/svg/dollar.svg" alt="" class="fixPayHeightIcon">Пополнить счет</div>
+                            </a>
+                        </div>
+                    </nav>
+                </header>
+                <div class="sectionOneBottom">
+                    <div class="sectionOneLeft">
+                        <div class="sectionOneText">
+                            <h1>Entice RPG - Выбери свой<br>путь, будь кем угодно и где угодно!</h1>
+                            <span>Присоединяйся к нам и начинай свой путь<br>прямо сейчас на Entice RPG!</span>
+                            <a href="" class="goPlayButton">
+                                <div class="playButton"></div>
+                                <div class="abc">Начать игру <img src="./img/svg/arrowLeft.svg" alt="" class="fixPlayHeightIcon"></div>
+                            </a>
+                        </div>
+                        <div class="arrowDown"><img src="./img/svg/next.svg" alt="" class="fixNextHeightIcon">ПРОКРУТИ ВНИЗ</div>
+                    </div>
+                    <div class="sectionOneRight">
+                        <img src="./img/girl.png" alt="" class="girlTop">
+                        <img src="./img/girl.png" alt="" class="girlBack">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionTwo">
+            <div class="sectionTwoBg"></div>
+            <div class="container">
+                <div class="sectionTwoTitle">
+                    <p>Мониторинг</p>
+                    <h1>Наши сервера</h1>
+                </div>
+                <div class="sectionTwoServers">
+                    <div class="serverBlock">
+                        <div class="serverBlockBg"></div>
+                        <div class="pointServer"><img src="./img/svg/point.svg" alt=""></div>
+                        <div class="serverBlockDescr">
+                            <div class="serverName">Сервер 1</div>
+                            <div class="serverStats">
+                                <div>
+                                    <progress id="onlinePlayerProgressOne" :value="parseInt(players)" :max="parseInt(maxPlayers)"></progress>
+                                </div>
+                                <span class="onlinePlayer">{{ players }}</span>
+                                <span class="allPlayer"> / {{ maxPlayers }}</span>
+                            </div>
+                            <div class="serverIp">
+                                <div class="serverIpBg"></div>
+                                <div class="ipServerOne" id="ipOne">IP: 176.32.39.8:7777</div>
+                                <button id="copyIpOneServer" onclick="copyToClipboard('176.32.39.8:7777')"><img src="./img/svg/copy.svg" alt="" id="copyServerOne" class="fixCopyHeightIcon"></button>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="serverBlock serverOffline">
+                        <div class="serverBlockBg"></div>
+                        <div class="pointServer"><img src="./img/svg/point.svg" alt=""></div>
+                        <div class="serverBlockDescr">
+                            <div class="serverName">Сервер 2</div>
+                            <div class="serverStats">
+                                <div><progress id="onlinePlayerProgressTwo" value="115" max="500"></progress></div>
+                                <span class="onlinePlayer">155</span>/<span class="allPlayer">500</span>
+                            </div>
+                            <div class="serverIp">
+                                <div class="serverIpBg"></div>
+                                <div class="ipServerOne">В РАЗРАБОТКЕ</div>
+                                <img src="./img/svg/copy.svg" alt="" id="copyServerOne" class="fixCopyHeightIcon" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serverBlock serverOffline">
+                        <div class="serverBlockBg"></div>
+                        <div class="pointServer"><img src="./img/svg/point.svg" alt=""></div>
+                        <div class="serverBlockDescr">
+                            <div class="serverName">Сервер 3</div>
+                            <div class="serverStats">
+                                <div><progress id="onlinePlayerProgressThree" value="115" max="500"></progress></div>
+                                <span class="onlinePlayer">155</span>/<span class="allPlayer">500</span>
+                            </div>
+                            <div class="serverIp">
+                                <div class="serverIpBg"></div>
+                                <div class="ipServerOne">В РАЗРАБОТКЕ</div>
+                                <img src="./img/svg/copy.svg" alt="" id="copyServerOne" class="fixCopyHeightIcon" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionThree" id="playTab">
+            <div class="sectionThreeBg"></div>
+            <div class="container">
+                <div class="sectionThreeTitle">
+                    <p>НАЧАЛО ИГРЫ</p>
+                    <h1>Как начать играть?</h1>
+                </div>
+                <div class="goToPlayStage">
+                    <div class="playStage">
+                        <div class="playStageInfo">
+                            <p class="playStageTitle">СКАЧАЙТЕ<br>GTA SAN ANDREAS</p>
+                            <p class="playStageDescr">Установите GTA San Andreas на свой<br>компьютер в любое удобное для вас место</p>
+                            <a href=""  class="playStagePoint">
+                                <div class="playStagePointIn">
+                                    <img src="./img/svg/download.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="playStageBg"><img src="./img/playStage.png" alt=""></div>
+                    </div>
+                    <div class="playStage">
+                        <div class="playStageInfo">
+                            <p class="playStageTitle">УСТАНОВИТЕ  МУЛЬТИПЛЕЕР</p>
+                            <p class="playStageDescr">Установите модификацию SAMP обязательно<br>в папку с GTA SA Запустите его и введите<br>свое имя (пр. Имя_Фамилия) латиницой</p>
+                            <a href=""  class="playStagePoint">
+                                <div class="playStagePointIn">
+                                    <img src="./img/svg/download.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="playStageBg"><img src="./img/playStage2.png" alt=""></div>
+                    </div>
+                    <div class="playStage">
+                        <div class="playStageInfo">
+                            <p class="playStageTitle">ПОДКЛЮЧИТЕСЬ К СЕРВЕРУ</p>
+                            <p class="playStageDescr">Добавьте наш сервер в избранное и<br>подключитесь к нему</p>
+                            <a href=""  class="playStagePoint">
+                                <div class="playStagePointIn">
+                                    <img src="./img/svg/list.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="playStageBg"><img src="./img/playStage3.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionFour" id="newsTab">
+            <div class="sectionFourBg"></div>
+            <div class="container cards">
+                <div class="sectionThreeTitle">
+                    <p>ВАЖНЫЕ НОВОСТИ</p>
+                    <h1>Новости проекта</h1>
+                </div>
+
+                <div class="news-section-main">
+                    <div class="newsSectionAll" v-for="item of news">
+                        <div class="newsSection">
+                            <div class="newsSectionBg"><img src="./img/news.png" alt=""></div>
+                            
+                            <div class="news">
+                                <div class="newsHeader">
+                                    <span class="newsTitle">{{ item.header }}</span>
+                                    <span class="newsTime">{{ item.time }}</span>
+                                </div>
+                                <span class="newsInfo">{{ item.description | sliceString(240) }}</span>
+                            </div>
+
+                            <div class="newsSeeAll">
+                                <a href="">...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+            <div class="footer">
+                <div class="logo">
+                    <h1>Entice <b>RPG</b></h1>
+                    <span>Попробуй и ты соблазн на вкус</span>
+                </div>
+                <div class="navBar">
+                    <ul>
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Форум</a></li>
+                        <li><a href="">Как начать играть</a></li>
+                        <li><a href="">Новости</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/vue.js"></script>
+</html>
