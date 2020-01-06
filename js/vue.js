@@ -8,19 +8,22 @@ new Vue({
             {
                 header: 'Заголовок 1',
                 description: 'Какой-то текст',
-                time: ''
+                time: '',
+				link: 'https://google.com'
             },
 
             {
                 header: 'Заголовок 2',
                 description: 'Какой-то текст',
-                time: ''
+                time: '',
+				link: 'https://youtube.com'
             },
 
             {
                 header: 'Заголовок 3',
                 description: 'Lorem Ipsum является текст-заполнитель обычно используется в графических, печать и издательской индустрии для предварительного просмотра макета и визуальных макетах.',
-                time: ''
+                time: '',
+				link: 'https://yandex.ru'
             },
 
         ]
